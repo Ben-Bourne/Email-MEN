@@ -1,0 +1,20 @@
+<html>
+    <% include navbar %>
+    <h1>Inbox</h1>
+    <table>
+        <tr>
+            <th></th>
+            <th>Sender</th>
+            <th>Subject</th>
+            <th>Date Received</th>
+        </tr>
+        <% emails.forEach((email)=>{ %>
+            <tr>
+                <td><input type='checkbox'></td>
+                <td><%= email.userFrom %></td>
+                <td><%= email.subject %></td>
+                <td><%= email.dateSent %></td>
+            </tr>
+        <% }); %>
+    </table>
+</html>

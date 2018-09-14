@@ -1,0 +1,9 @@
+<html>
+    <% include navbar %>
+    <form action='http://localhost:4000/send' method='POST'>
+        <p>To : <input name='userTo'></p>
+        <p>Subject : <input name='subject'></p>
+        <input name='contents' style='height:400px; width:600px'>
+        <input type='submit' value='send'>
+    </form>
+</html>
